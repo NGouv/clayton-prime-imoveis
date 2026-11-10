@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0c1523">
+    <meta name="description" content="Compra, venda, locação e administração de imóveis em São Paulo com atendimento próximo e transparente. Fale com a Clayton Prime Imóveis.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Clayton Prime Imóveis | Escolhas feitas com confiança">
+    <meta property="og:description" content="Imóveis em São Paulo. Compra, venda, locação e administração com atendimento próximo.">
+    <meta property="og:image" content="assets/hero.png">
+    <title>Clayton Prime Imóveis | Escolhas feitas com confiança</title>
+    <link rel="icon" type="image/png" href="assets/logo-trans.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="property-data.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header" id="topo">
+      <div class="header-inner">
+        <a class="brand" href="#inicio" aria-label="Clayton Prime Imóveis — início">
+          <img src="assets/logo-trans.png" alt="Clayton Prime Imóveis">
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Navegação principal">
+          <a href="#inicio">Início</a>
+          <a href="#imoveis">Imóveis</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#proprietarios">Proprietários</a>
+          <a href="#contato">Contato</a>
+          <a class="nav-contact" href="https://wa.me/5511947093575?text=Ol%C3%A1%21%20Gostaria%20de%20conhecer%20a%20Clayton%20Prime." target="_blank" rel="noopener noreferrer">Fale conosco <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-shade"></div>
+        <div class="hero-content page-width">
+          <p class="eyebrow hero-eyebrow"><span></span> SÃO PAULO <i>·</i> CRECI 174976</p>
+          <h1 id="hero-title">Imóveis em São Paulo.<br><em>Escolhas feitas</em><br>com confiança.</h1>
+          <p class="hero-copy">Compra, venda, locação e administração de imóveis com atendimento próximo e acompanhamento em cada etapa.</p>
+          <div class="hero-actions">
+            <a class="button button-gold" href="#imoveis">Explorar imóveis <span aria-hidden="true">↘</span></a>
+            <a class="text-link light-link" href="https://wa.me/5511947093575?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20com%20um%20consultor%20da%20Clayton%20Prime." target="_blank" rel="noopener noreferrer">Falar com um consultor <span aria-hidden="true">↗</span></a>
+          </div>
+          <form class="hero-search" id="hero-search">
+            <label>
+              <span>Finalidade</span>
+              <select name="purpose" aria-label="Finalidade">
+                <option value="">Comprar ou alugar</option>
+                <option value="buy">Comprar</option>
+                <option value="rent">Alugar</option>
+              </select>
+            </label>
+            <label>
+              <span>Tipo de imóvel</span>
+              <select name="type" aria-label="Tipo de imóvel">
+                <option value="">Todos os tipos</option>
+                <option value="Apartamento">Apartamento</option>
+                <option value="Casa">Casa</option>
+              </select>
+            </label>
+            <label>
+              <span>Bairro demonstrativo</span>
+              <select name="neighborhood" aria-label="Bairro demonstrativo">
+                <option value="">Todos os bairros</option>
+                <option value="Vila Mariana">Vila Mariana</option>
+                <option value="Saúde">Saúde</option>
+                <option value="Ipiranga">Ipiranga</option>
+              </select>
+            </label>
+            <label>
+              <span>Dormitórios</span>
+              <select name="bedrooms" aria-label="Quantidade mínima de dormitórios">
+                <option value="">Qualquer quantidade</option>
+                <option value="1">1+ dormitórios</option>
+                <option value="2">2+ dormitórios</option>
+                <option value="3">3+ dormitórios</option>
+              </select>
+            </label>
+            <button type="submit" class="search-button"><span aria-hidden="true">⌕</span> Buscar imóveis</button>
+          </form>
+          <p class="demo-note">Bairros e imóveis demonstrativos. Disponibilidade sujeita à carteira atual.</p>
+        </div>
+        <a class="hero-scroll" href="#imoveis" aria-label="Rolar para conhecer os imóveis"><span></span> role para descobrir</a>
+      </section>
+
+      <section class="listings section-pad" id="imoveis" aria-labelledby="listings-title">
+        <div class="page-width">
+          <div class="section-heading listings-heading">
+            <div>
+              <p class="eyebrow"><span></span> Conheça algumas oportunidades</p>
+              <h2 id="listings-title">Imóveis que merecem<br><em>sua atenção.</em></h2>
+            </div>
+            <p class="section-intro">Uma seleção demonstrativa para apresentar as possibilidades. Cada escolha começa com uma boa conversa.</p>
+          </div>
+          <div class="listing-toolbar">
+            <div class="filter-tabs" role="group" aria-label="Filtrar por finalidade">
+              <button type="button" class="filter-tab active" data-purpose="">Todos</button>
+              <button type="button" class="filter-tab" data-purpose="buy">Comprar</button>
+              <button type="button" class="filter-tab" data-purpose="rent">Alugar</button>
+            </div>
+            <div class="secondary-filters">
+              <label class="sr-only" for="filter-type">Tipo de imóvel</label>
+              <select id="filter-type"><option value="">Tipo de imóvel</option><option>Apartamento</option><option>Casa</option></select>
+              <label class="sr-only" for="filter-neighborhood">Bairro</label>
+              <select id="filter-neighborhood"><option value="">Bairro</option><option>Vila Mariana</option><option>Saúde</option><option>Ipiranga</option></select>
+              <label class="sr-only" for="filter-bedrooms">Dormitórios</label>
+              <select id="filter-bedrooms"><option value="">Dormitórios</option><option value="1">1+</option><option value="2">2+</option><option value="3">3+</option></select>
+              <button type="button" class="clear-filters" id="clear-filters">Limpar filtros</button>
+            </div>
+          </div>
+          <div class="results-line">
+            <span id="results-count" aria-live="polite">3 imóveis demonstrativos</span>
+            <button type="button" class="share-favorites" id="share-favorites" disabled>Compartilhar favoritos <span aria-hidden="true">↗</span></button>
+          </div>
+          <div class="property-grid" id="property-grid" aria-live="polite"></div>
+          <div class="empty-state" id="empty-state" hidden>
+            <p>Não encontramos imóveis com esses critérios.</p>
+            <a class="button button-dark" id="empty-whatsapp" href="https://wa.me/5511947093575" target="_blank" rel="noopener noreferrer">Conte o que você procura <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="catalog-disclaimer">Imóveis, valores, características e localizações desta página são exclusivamente demonstrativos; não representam anúncios reais da imobiliária.</p>
+        </div>
+      </section>
+
+      <section class="about section-pad" id="sobre" aria-labelledby="about-title">
+        <div class="about-layout page-width">
+          <div class="about-image-wrap">
+            <img class="about-image" src="assets/sp.png" alt="Bandeira do estado de São Paulo sobre a cidade ao pôr do sol" loading="lazy" width="1122" height="1402">
+            <span class="image-index">01 <i>/</i> 03</span>
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow"><span></span> Uma relação de confiança</p>
+            <h2 id="about-title">Mais do que intermediar imóveis, <em>aproximamos pessoas de boas escolhas.</em></h2>
+            <p>A Clayton Prime Imóveis atua com compra, venda, locação e administração de imóveis, buscando oferecer um atendimento próximo, organizado e transparente em cada negociação.</p>
+            <div class="creci-mark"><span>CRECI</span><strong>174976</strong></div>
+            <a class="text-link dark-link" href="#contato">Conheça a Clayton Prime <span aria-hidden="true">↘</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="services section-pad" id="servicos" aria-labelledby="services-title">
+        <div class="page-width">
+          <div class="section-heading services-heading">
+            <div>
+              <p class="eyebrow eyebrow-light"><span></span> Presença em cada etapa</p>
+              <h2 id="services-title">Como podemos <em>ajudar?</em></h2>
+            </div>
+            <p class="section-intro">Um atendimento claro para diferentes momentos da sua jornada imobiliária.</p>
+          </div>
+          <div class="service-list">
+            <article class="service-item">
+              <span class="service-number">01</span>
+              <h3>Compra e venda</h3>
+              <p>Acompanhamento na busca, negociação e intermediação de imóveis.</p>
+              <a href="https://wa.me/5511947093575?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20compra%20e%20venda%20de%20im%C3%B3veis." target="_blank" rel="noopener noreferrer" aria-label="Fale sobre compra e venda">↗</a>
+            </article>
+            <article class="service-item">
+              <span class="service-number">02</span>
+              <h3>Locação</h3>
+              <p>Atendimento para quem procura um imóvel para alugar ou deseja disponibilizar seu imóvel.</p>
+              <a href="https://wa.me/5511947093575?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20loca%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" aria-label="Fale sobre locação">↗</a>
+            </article>
+            <article class="service-item">
+              <span class="service-number">03</span>
+              <h3>Administração de imóveis</h3>
+              <p>Suporte aos proprietários que desejam contar com apoio na gestão dos seus imóveis.</p>
+              <a href="https://wa.me/5511947093575?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20administra%C3%A7%C3%A3o%20de%20im%C3%B3veis." target="_blank" rel="noopener noreferrer" aria-label="Fale sobre administração de imóveis">↗</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="owners section-pad" id="proprietarios" aria-labelledby="owners-title">
+        <div class="owners-layout page-width">
+          <div class="owners-copy">
+            <p class="eyebrow"><span></span> Para proprietários</p>
+            <h2 id="owners-title">Quanto vale<br>o seu <em>imóvel?</em></h2>
+            <p>Está pensando em vender ou alugar? Converse com a Clayton Prime e apresente seu imóvel à nossa equipe.</p>
+            <ol class="steps">
+              <li><span>01</span> Você informa os dados do imóvel.</li>
+              <li><span>02</span> A equipe recebe sua solicitação.</li>
+              <li><span>03</span> A negociação é conversada diretamente com a imobiliária.</li>
+            </ol>
+          </div>
+          <form class="owner-form" id="owner-form">
+            <p class="form-kicker">Vamos começar uma conversa</p>
+            <label for="owner-name">Seu nome</label>
+            <input id="owner-name" name="name" type="text" autocomplete="name" placeholder="Como podemos chamar você?" required>
+            <label for="owner-goal">O que deseja fazer?</label>
+            <select id="owner-goal" name="goal" required>
+              <option value="" selected disabled>Selecione uma opção</option>
+              <option value="Vender">Vender</option>
+              <option value="Alugar">Alugar</option>
+              <option value="Solicitar administração">Solicitar administração</option>
+            </select>
+            <label for="owner-type">Tipo de imóvel</label>
+            <select id="owner-type" name="type" required>
+              <option value="" selected disabled>Selecione o tipo</option>
+              <option>Apartamento</option><option>Casa</option><option>Outro</option>
+            </select>
+            <label for="owner-neighborhood">Bairro</label>
+            <input id="owner-neighborhood" name="neighborhood" type="text" placeholder="Em qual bairro fica?" required>
+            <button class="button button-dark form-submit" type="submit">Enviar pelo WhatsApp <span aria-hidden="true">↗</span></button>
+            <p class="form-note">Ao enviar, você será direcionado ao WhatsApp oficial da imobiliária.</p>
+          </form>
+        </div>
+      </section>
+
+      <section class="faq section-pad" id="duvidas" aria-labelledby="faq-title">
+        <div class="faq-layout page-width">
+          <div class="faq-heading">
+            <p class="eyebrow"><span></span> Informação com clareza</p>
+            <h2 id="faq-title">Dúvidas <em>frequentes.</em></h2>
+            <p>Não encontrou sua resposta? Nossa equipe está à disposição para conversar.</p>
+            <a class="text-link dark-link" href="https://wa.me/5511947093575?text=Ol%C3%A1%21%20Tenho%20uma%20d%C3%BAvida%20sobre%20os%20servi%C3%A7os%20da%20Clayton%20Prime." target="_blank" rel="noopener noreferrer">Pergunte pelo WhatsApp <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="faq-list">
+            <details>
+              <summary>Como faço para conhecer um imóvel?<span aria-hidden="true"></span></summary>
+              <p>Entre em contato pelo WhatsApp e informe a referência do imóvel. A equipe poderá conversar sobre disponibilidade e próximos passos.</p>
+            </details>
+            <details>
+              <summary>Como funciona o processo de locação?<span aria-hidden="true"></span></summary>
+              <p>As condições e etapas podem variar conforme o imóvel. Fale com a equipe para receber informações atualizadas sobre a oportunidade desejada.</p>
+            </details>
+            <details>
+              <summary>Posso anunciar meu imóvel com a Clayton Prime?<span aria-hidden="true"></span></summary>
+              <p>Sim, você pode apresentar seu imóvel à equipe pelo formulário para proprietários ou entrar em contato diretamente pelo WhatsApp.</p>
+            </details>
+            <details>
+              <summary>Como entro em contato com a imobiliária?<span aria-hidden="true"></span></summary>
+              <p>Você pode falar pelo WhatsApp, telefone ou e-mail. Os canais oficiais estão disponíveis na seção de contato.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-pad" id="contato" aria-labelledby="contact-title">
+        <div class="page-width">
+          <div class="contact-top">
+            <div>
+              <p class="eyebrow eyebrow-light"><span></span> Um próximo passo</p>
+              <h2 id="contact-title">Vamos <em>conversar?</em></h2>
+            </div>
+            <a class="button button-gold" href="https://wa.me/5511947093575?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20im%C3%B3veis%20da%20Clayton%20Prime." target="_blank" rel="noopener noreferrer">Chamar no WhatsApp <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-details">
+              <a class="contact-row" href="https://wa.me/5511947093575" target="_blank" rel="noopener noreferrer"><span>WhatsApp</span><strong>(11) 94709-3575</strong><i aria-hidden="true">↗</i></a>
+              <a class="contact-row" href="tel:+551120830997"><span>Telefone</span><strong>(11) 2083-0997</strong><i aria-hidden="true">↗</i></a>
+              <a class="contact-row" href="mailto:imobiliariaclayton@gmail.com"><span>E-mail</span><strong>imobiliariaclayton@gmail.com</strong><i aria-hidden="true">↗</i></a>
+              <a class="contact-row" href="https://www.google.com/maps/place/Imobili%C3%A1ria+Marinho+%26+Clayton/@-23.6362197,-46.6849138,12z/" target="_blank" rel="noopener noreferrer"><span>Endereço</span><strong>Avenida Padre Arlindo Vieira, 1788<br>São Paulo/SP · CEP 04166-001</strong><i aria-hidden="true">↗</i></a>
+              <div class="contact-row"><span>CRECI</span><strong>174976</strong></div>
+              <a class="instagram-link" href="https://www.instagram.com/imobiliariaclaytonprime/" target="_blank" rel="noopener noreferrer"><span>Acompanhe a Clayton Prime.</span><strong>@imobiliariaclaytonprime</strong><i aria-hidden="true">↗</i></a>
+            </div>
+            <div class="map-frame">
+              <iframe title="Localização da Clayton Prime Imóveis em São Paulo" src="https://www.google.com/maps?q=Avenida%20Padre%20Arlindo%20Vieira%2C%201788%2C%20S%C3%A3o%20Paulo%2C%20SP&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <a class="map-link" href="https://www.google.com/maps/place/Imobili%C3%A1ria+Marinho+%26+Clayton/@-23.6362197,-46.6849138,12z/" target="_blank" rel="noopener noreferrer">Abrir no Google Maps <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-width footer-inner">
+        <a class="footer-brand" href="#inicio" aria-label="Clayton Prime Imóveis — voltar ao início"><img src="assets/logo-trans.png" alt="Clayton Prime Imóveis"></a>
+        <p>Escolhas feitas com confiança.<br><span>Compra · Venda · Locação · Administração</span></p>
+        <span class="footer-creci">CRECI 174976</span>
+        <a class="back-top" href="#topo">Voltar ao topo ↑</a>
+      </div>
+      <div class="footer-bottom page-width"><span>© <span id="current-year"></span> Clayton Prime Imóveis</span><span>São Paulo, SP</span></div>
+    </footer>
+
+    <a class="floating-whatsapp" href="https://wa.me/5511947093575?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20im%C3%B3veis%20da%20Clayton%20Prime." target="_blank" rel="noopener noreferrer" aria-label="Fale com a Clayton Prime pelo WhatsApp">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.1-1.2-6-3.5-8.3ZM12.1 21.6c-1.7 0-3.4-.5-4.9-1.3l-.4-.2-3.9 1 1-3.8-.2-.4a9.7 9.7 0 0 1-1.5-5.1c0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.4-4.4 9.8-9.8 9.8Zm5.4-7.3c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.7.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.7-1.7-2-.2-.3 0-.5.1-.6.1-.1.3-.3.5-.5.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.6-.9-2.1-.2-.5-.5-.4-.7-.4H7.8c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.7 1.1 2.9.1.2 2 3.1 4.9 4.3.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.4Z"/></svg>
+    </a>
+
+  </body>
+</html>
